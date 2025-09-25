@@ -10,15 +10,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Фиксированная ссылка "назад" -->
   <a href="index.html" class="back-link">← Вернуться на главную</a>
-  <div class="wrapper">
-    <header class="page-header">
-      <h1>📚 Обучение</h1>
-      <p>Изучайте новые темы в удобном формате</p>
-    </header>
-    <main class="content">
-      <p>Здесь будут уроки, видео, статьи и интерактивные материалы.</p>
+
+  <div class="layout">
+    <!-- Левая колонка: навигация -->
+    <nav class="sidebar">
+      <h2>Темы</h2>
+      <ul class="topics-list">
+        <li><a href="#" data-content="intro">Введение</a></li>
+        <li><a href="#" data-content="html">HTML</a></li>
+        <li><a href="#" data-content="css">CSS</a></li>
+        <li><a href="#" data-content="js">JavaScript</a></li>
+        <li><a href="#" data-content="git">Git</a></li>
+      </ul>
+    </nav>
+
+    <!-- Правая колонка: контент -->
+    <main class="content-area">
+      <div id="content">
+        <h1>📚 Обучение</h1>
+        <p>Выберите тему слева, чтобы начать обучение.</p>
+      </div>
     </main>
   </div>
+
+  <script src="js/lrn.js"></script>
 </body>
 </html>
