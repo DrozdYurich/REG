@@ -11,14 +11,26 @@
 </head>
 <body>
   <a href="index.html" class="back-link">← Вернуться на главную</a>
+
   <div class="wrapper">
-    <header class="page-header">
-      <h1>📚 Тестирование</h1>
-      <p>Изучайте новые тестирования в удобном формате</p>
-    </header>
-    <main class="content">
-      <p>Здесь будут тесты.</p>
-    </main>
+    <!-- Контейнер для выбора теста или отображения самого теста -->
+    <div id="test-container">
+      <header class="page-header">
+        <h1>📚 Тестирование</h1>
+        <p>Выберите тест для прохождения</p>
+      </header>
+
+      <main class="content">
+        <div class="tests-list">
+          <button class="test-btn" data-test="html">Тест по HTML</button>
+          <button class="test-btn" data-test="css">Тест по CSS</button>
+          <button class="test-btn" data-test="js">Тест по JavaScript</button>
+          <button class="test-btn" data-test="git">Тест по Git</button>
+        </div>
+      </main>
+    </div>
   </div>
+
+  <script src="js/tst.js"></script>
 </body>
 </html>
