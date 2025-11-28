@@ -178,3 +178,102 @@ body {
     padding: 15px;
   }
 }
+.lesson-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.lesson-content h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+}
+
+.lesson-content h2 {
+  color: #34495e;
+  margin: 40px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #bdc3c7;
+  font-size: 1.8em;
+}
+
+.category-section {
+  margin-bottom: 40px;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 5px solid #3498db;
+}
+
+.person-card, .dynasty-card {
+  background: white;
+  border-left: 4px solid #3498db;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.person-card:hover, .dynasty-card:hover {
+  transform: translateX(5px);
+}
+
+.person-card h3, .dynasty-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.years {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.person-card strong, .dynasty-card strong {
+  color: #2c3e50;
+}
+
+.person-card p, .dynasty-card p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.dynasty-card {
+  border-left-color: #e74c3c;
+}
+
+.dynasty-card h3 {
+  color: #c0392b;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .lesson-content {
+    padding: 15px;
+  }
+  
+  .lesson-content h1 {
+    font-size: 2em;
+  }
+  
+  .lesson-content h2 {
+    font-size: 1.5em;
+  }
+  
+  .category-section {
+    padding: 15px;
+  }
+  
+  .person-card, .dynasty-card {
+    padding: 15px;
+  }
+}
