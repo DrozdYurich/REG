@@ -13,7 +13,9 @@ body {
 }
 
 .wrapper {
-  max-width: 800px;
+  max-width: 90vw;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
@@ -33,17 +35,17 @@ body {
 
 /* Контейнер списка тестов */
 .tests-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 28px;
   margin-top: 32px;
-  justify-items: center;
+  justify-content: center; /* или space-between / space-around */
 }
 
 /* Карточка теста — с постоянным светло-синим бордером и мягкой тенью */
 .test-btn {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   padding: 24px 20px;
   font-size: 1.15rem;
   font-weight: 600;
