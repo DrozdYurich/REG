@@ -100,3 +100,81 @@ body {
   line-height: 1.6;
   margin-bottom: 16px;
 }
+.lesson-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.lesson-content h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.lesson-content p {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+.person-card, .dynasty-card {
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+
+
+.person-card h3, .dynasty-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.years {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.person-card strong, .dynasty-card strong {
+  color: #2c3e50;
+}
+
+.person-card p, .dynasty-card p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.dynasty-card {
+  border-left-color: #e74c3c;
+}
+
+.dynasty-card h3 {
+  color: #c0392b;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .lesson-content {
+    padding: 15px;
+  }
+  
+  .lesson-content h1 {
+    font-size: 1.8em;
+  }
+  
+  .person-card, .dynasty-card {
+    padding: 15px;
+  }
+}
