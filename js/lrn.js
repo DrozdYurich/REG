@@ -4838,7 +4838,17 @@ const lessons = {
 document.querySelectorAll('.topics-list a').forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
+    
+    // Удаляем класс active у всех ссылок
+    document.querySelectorAll('.topics-list a').forEach(item => {
+      item.classList.remove('active');
+    });
+    
+    // Добавляем класс active к выбранной ссылке
+    e.target.classList.add('active');
+    
     const contentKey = e.target.getAttribute('data-content');
     document.getElementById('content').innerHTML = lessons[contentKey] || '<p>Материал временно недоступен.</p>';
   });
 });
+
